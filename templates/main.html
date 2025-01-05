@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" product="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <script src="https://kit.fontawesome.com/43f70b9b97.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'assets/css/flexslider.css' %}" type="text/css" media="screen">
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick-slider.css' %}" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'cmn-style.css' %}">
+    <link rel="stylesheet" href="{% static 'responsive.css' %}">
+
+
+    <title>Mugdhota</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+
+    <!-- Header top section -->
+     <div class="container_full" style="padding: 0;">
+        <div class="container">
+            <div class="header_top_section">
+                <div class="hts_left">
+                    <p class="htc_left_au">About Us </p>
+                    <p><i class="fa-solid fa-truck"></i> Order Tracking</p>
+                </div>
+                <div class="hts_right">
+                    <p>Need help? Call us <a href="">01234567895</a></p>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <div class="container_header">
+        <div class="container">
+
+            <div id="header">
+                <div class="header_section">
+
+                    <div class="mugdhota_web_info_left">
+                        <div class="mugdhota_logo">
+                            <a href="#"><img src="images/mugdhota.PNG" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="sm_manu mob">
+                        <div class="sm_mobile">
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i id="icon" class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mugdhota_web_info_middle desk">
+                        <div class="main_search">
+                            <input type="search">
+                            <button type="submit">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="mugdhota_web_info_right desk">
+                        <div class="mugdhota_web_info_right_sec desk">
+                            <div class="cart_wish_list wish">
+                                <h1>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="cw_num">5</span>
+                                </h1>
+                                <h2>Wishlist</h2>
+                            </div>
+                            <div class="cart_wish_list cart">
+                                <h1>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="cw_num">5</span>
+                                </h1>
+                                <h2>Cart</h2>
+                            </div>
+                            <div class="cart_wish_list account">
+                                <a href="#">
+                                    <h1>
+                                        <i class="fa fa-user-circle-o"></i>
+                                    </h1>
+                                    <h2>Account</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Main Menu -->
+
+        <div class="container_nav desk">
+            <div class="container">
+
+                <div id="mugdhota_menu_section">
+                    <div class="main_manu_section">
+                        <nav class="mugdhota_top_nav">
+                            <ul>
+                                <li class="mugdhota_main_manu_items"><a href="#">Home</a></li>
+                                <li class="mugdhota_main_manu_items"><a href="#">Home</a></li>
+                                <li class="mugdhota_main_manu_items"><a href="#">Home</a></li>
+                                <li class="mugdhota_main_manu_items"><a href="#">Home</a></li>
+                                <li class="mugdhota_main_manu_items"><a href="#">Home</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- End Main Menu -->
+
+    </div>
+
+
+    <!-- Mobile Manu -->
+    <div id="mob_manu_items">
+        <div class="mob_manu_section">
+            <div class="mob_ms_top">
+                <div class="mob_ms_top_sec">
+
+                </div>
+            </div>
+            <div class="mob_ms_bottom">
+                <div class="mob_ms_bottom_menu_items">
+                    <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contant</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Header Section -->
+
+    {% block content %}
+    {% endblock content %}
+
+   <script src="{% static 'assets/js/script.js' %}"></script>
+    <!-- jQuery -->
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+
+    <!-- Slick Slider JS -->
+    <script src="{% static 'assets/js/slick.js' %}"></script>
+
+    <!-- Slider Js -->
+    <script>
+
+        // Main Slider
+        $(document).ready(function () {
+            $('.slider_section').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false, // Disable default arrows
+                autoplay: true,
+                autoplaySpeed: 3000,
+                fade: false,
+                infinity: true,
+                cssEase: 'ease-in-out',
+            });
+
+            // Custom buttons
+            $('.slide_prev').click(function () {
+                $('.slick-slider').slick('slickPrev');
+            });
+
+            $('.slide_next').click(function () {
+                $('.slick-slider').slick('slickNext');
+            });
+        });
+
+        // Product Slider
+        $(document).ready(function () {
+            $('.product_slider').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: false, // Disable default arrows
+                autoplay: true,
+                autoplaySpeed: 3500,
+                fade: false,
+                infinity: true,
+                cssEase: 'ease-in-out',
+            });
+
+            // Custom buttons
+            $('.product_slide_prev').click(function () {
+                $('.slick-slider').slick('slickPrev');
+            });
+
+            $('.product_slide_next').click(function () {
+                $('.slick-slider').slick('slickNext');
+            });
+        });
+
+    </script>
+
+    <!-- Mobile Manu -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mob_manu_items");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+
+            const icon = document.getElementById('icon');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-close');
+            } else {
+                icon.classList.remove('fa-close');
+                icon.classList.add('fa-bars'); // Changes back to the bars icon
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>

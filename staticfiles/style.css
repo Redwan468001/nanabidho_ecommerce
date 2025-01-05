@@ -1,0 +1,570 @@
+/**
+    Theme Name: Mugdhota
+    Author: Redwan
+    Email: redwanshuvo1@gmail.com
+    Website: resoftek.com
+    Version: 4.1.5
+**/
+
+@import url('https://fonts.maateen.me/bangla/font.css');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+
+
+*{margin:0;padding:0}
+ul{margin:0}
+li{list-style:none;padding:0 5px;}
+a{text-decoration:none;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';color:black;}
+h2{font-size:19px;line-height:1.4;margin:0 0 10px 0;padding:0;color:black;font-weight:bold;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';transition:.2s all ease-in-out;}
+h3{font-size:18px;line-height: 1.4;margin:0 0 10px 0;padding:0;color:black;font-weight:bold;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';transition:.2s all ease-in-out;}
+p{font-size:17px;font-weight:normal;line-height:1.4;color:black;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';}
+a:hover{text-decoration: none;}
+img{width:100%;height: auto;display:block;text-indent: -9999px !important;}
+.left{float:left !important}
+.right{float:right !important}
+.h2s h2{margin:10px 0 15px 0}
+.no_pad{padding:0 !important}
+.no_mrg{margin:0 !important}
+.img_ha img{height:auto !important}
+.abh_description{font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';color:black;}
+input, button, select, textarea {
+  font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';font-size: inherit; line-height: inherit; padding: 5px;
+}
+.google-auto-placed{
+    margin: 10px 0;
+    padding: 5px;
+    display: inline-table;
+}
+
+body{
+	font-family: SolaimanLipi, Bangla, Baloo Da 2, georgian, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif !important;
+	color: black;
+}
+
+.container_full{
+    padding:20px 0 30px 0;
+}
+.container{
+	width: 1200px;
+    padding: 0;
+}
+.mob{
+    display: none;
+}
+
+h2:hover{
+    color: blue;
+}
+
+.product_title h2{
+    font-size: 20px;
+    padding: 18px 10px;
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    border-left: 4px solid red;
+}
+
+/* Header Section */
+
+#header{
+    overflow: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Header Top */
+.header_top_section{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.hts_left{
+    display: flex;
+    width: 50%;
+    float: left;
+}
+.hts_left p{
+    font-size: 16px;
+    color: #949393;
+    padding: 0;
+    margin: 0;
+}
+.htc_left_au{
+    border-right: 1px solid #ddd;
+    padding-right: 8px !important;
+    margin-right: 8px !important;
+}
+.hts_right{
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+.hts_right p{
+    padding: 0;
+    margin: 0;
+}
+
+/* Header left */
+.mugdhota_web_info_left{
+    width: 18%;
+    float: left;
+}
+
+/* Header Middle */
+.mugdhota_web_info_middle{
+    width: 52%;
+    float: left;
+    padding: 0 20px;
+}
+.mugdhota_web_info_middle .main_search{
+    padding: 1.4% 0 0 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.mugdhota_web_info_middle .main_search input[type=search]{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 82%;
+    padding: 10px;
+}
+.mugdhota_web_info_middle .main_search button[type=submit]{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 17%;
+    padding: 10px;
+}
+
+
+/* Header Right */
+.mugdhota_web_info_right{
+    width: 30%;
+    float: left;
+}
+.mugdhota_web_info_right a{
+    display: inline-flex;
+}
+.mugdhota_web_info_right_sec{
+    display: flex;
+}
+.cart_wish_list{
+    display: flex;
+    position: relative;
+    padding: 15px 10px 0;
+}
+.wish{
+    width: 35%;
+}
+.cart{
+    width: 30%;
+}
+.account{
+    width: 35%;
+    padding-right: 0 !important;
+}
+.cart_wish_list h1{
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+.cart_wish_list h1{
+    position: relative;
+}
+.cart_wish_list h2{
+    padding-left: 8px;
+    letter-spacing: 1.5px;
+}
+.cw_num{
+    position: absolute;
+    top: -7px;
+    right: -5px;
+    font-size: 12px;
+    color: #fff;
+    background: rgb(11, 185, 212);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 4px;
+    font-weight: 600;
+}
+.mugdhota_web_info_right i{
+    margin-right: 5px;
+    font-size: 30px;
+}
+
+
+/* Main Manu Section */
+
+.mugdhota_top_nav{
+    display: flex;
+    position: relative;
+}
+.mugdhota_top_nav>ul>li{
+    float: left;
+    position: static;
+    height: 100%;
+    padding: 0;
+}
+.mugdhota_top_nav>ul>li>a{
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    position: relative;
+    border-bottom: 5px solid #fff;
+    transition: all .3s;
+    -webkit-transition: all .3s linear;
+}
+
+.mugdhota_top_nav>ul>li>a:hover{
+    border-bottom: 5px solid #ddd;
+}
+
+.mugdhota_main_manu_items{
+    position: relative;
+}
+
+#mob_manu_items{
+    display: none;
+}
+
+/* Overview Nav */
+
+.section{
+    display: none;
+}
+.section.active_ov {
+    display: block;
+}
+
+/* End Main Manu Section */
+
+
+/* 
+    End Header Section 
+*/
+
+/* 
+    Slider
+*/
+
+.slider_container {
+    position: relative;
+    margin: 0 auto;
+}
+.all_product_category{
+    width: 25%;
+    float: left;
+}
+.slider_section{
+    width: 75%;
+    float: right;
+    padding-left: 15px;
+}
+.product_category{
+    border: 1px solid #ddd;
+    margin-right: 15px;
+}
+.cat_title h2{
+    margin: 0;
+    background-color: rgb(20, 194, 113);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.cat_name{
+    padding: 10px 20px;
+}
+.cat_name ul li a{
+    display: block;
+    padding: 10px 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cat_name li>a>i{
+    width: 22px;
+    font-size: 20px;
+}
+
+.slider_section .slide_img{
+    width: 60%;
+    float: left;
+}
+.slider_section .slide_cnt{
+    width: 40%;
+    float: left;
+}
+.slider_section .slide img {
+    width: 100%;
+    height: 320px;
+    display: block;
+}
+.slide_product{
+    height: 320px;
+    padding: 45px 40px;
+    background-color: #ededed;
+}
+.slider_controler{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+button.slide_prev,
+button.slide_next {
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+button.slide_prev i,
+button.slide_next i{
+    font-size: 25px;
+    color: black;
+}
+button.slide_prev {
+    left: 10px;
+}
+button.slide_next {
+    right: 10px;
+}
+
+/* Product Slider */
+
+.product_slider_items{
+    position: relative;
+}
+.sng_product_slide .sng_product_slide_cnt{
+    margin: 0 10px;
+    background-color: #edecec;
+}
+.product_slide_img{
+    padding: 10px;
+}
+.product_slide_cnt{
+    padding: 0 10px 10px 10px;
+}
+.product_slide_cnt h5{
+    font-size: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+}
+button.product_slide_prev,
+button.product_slide_next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #cdcfce;
+    color: #fff;
+    border: none;
+    padding: 30px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1000;
+}
+button.product_slide_prev i,
+button.product_slide_next i{
+    font-size: 25px;
+    color: black;
+}
+button.product_slide_prev {
+    left: -45px;
+}
+button.product_slide_next {
+    right: -45px;
+}
+/* 
+   End Slider
+*/
+
+
+
+/* 
+    product Section Style 'Overview'
+*/
+
+.wrapper{
+    width: 100%;
+    float: left;
+}
+.section_title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.section_title h2{
+    font-size: 36px;
+    position: relative;
+}
+.section_title h2:after{
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    right: 0;
+    height: 4px;
+    width: 80px;
+    background: #7fad39;
+    content: "";
+    margin: 0 auto;
+}
+.mugdhota_product_nav{
+    display: block;
+    overflow: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.mugdhota_product_nav ul{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+.mugdhota_product_nav>ul>li{
+    float: left;
+}
+.mugdhota_product_nav>ul>li>a{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    padding: 5px 10px;
+    color: rgb(24, 24, 24);
+}
+.mugdhota_product_nav>ul>li>a:hover{
+    color: rgb(4, 188, 4);
+}
+
+.active_cnt_nav{
+    color: rgb(4, 188, 4) !important;
+}
+
+.sng_mugdhota_product_item{
+    width: 25%;
+    float: left;
+}
+.sng_mugdhota_product{
+    padding: 15px;
+}
+.sng_mugdhota_product_sec{
+    background-color: #edecec;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.sng_mugdhota_product_sec:hover{
+    border: 1px solid rgb(18, 178, 18);
+}
+.product_img img{
+    padding: 15px;
+    height: 350px;
+}
+.product_image{
+    position: relative;
+}
+.add_wish{
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.add_wish_text{
+    display: none;
+    position: absolute;
+    width: 100%;
+    bottom: 35px;
+}
+.add_wish_text p{
+    background-color: rgb(6, 166, 28);
+    padding: 5px 8px;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px
+}
+.add_wish:hover .add_wish_text{
+    display: block;
+    transition: .1s all ease-in-out;
+}
+.add_wish_icon i{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+.sng_mugdhota_product_item:hover .add_wish{
+    display: block;
+    transition: .1s all ease-in-out;
+}
+.discount_sec{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.discount_sec p{
+    background-color: #0fafa6;
+    color: #fff;
+    border-radius: 10px 0 10px 0;
+    padding: 5px 20px
+}
+
+/* Product Info */
+.product_info{
+    padding: 0 10px 10px 10px;
+    display: inline-block;
+    width: 100%;
+}
+.product_info h2{
+    margin: 0 5px;
+    color: #434242;
+}
+.price_add_cart{
+    display: block;
+    margin-top: 10px;
+}
+.product_price{
+    width: 60%;
+    float: left;
+    display: flex;
+}
+.add_cart_btn{
+    width: 40%;
+    float: left;
+}
+.product_price h1{
+    font-size: 22px;
+    font-size: 25px;
+    color: firebrick;
+    margin: 0;
+    padding: 5px 0 0 5px;
+    font-weight: 700;
+}
+.product_price h3{
+    text-decoration: line-through;
+    margin: 0;
+    padding: 5px 0 0 5px;
+    color: #949393;
+}
+.add_cart_btn{
+    text-align: right;
+}
+.add_cart_btn button{
+    text-align: right;
+    padding: 5px 25px;
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    background: rgb(182, 231, 201);
+    border-radius: 5px;
+    color: rgb(7, 65, 117);
+}
+
+
+/* 
+    product Section Style 1 'Overview'
+*/
+

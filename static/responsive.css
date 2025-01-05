@@ -1,0 +1,80 @@
+@media (max-width: 480px) {
+
+body{
+    margin: 0 10px;
+}
+.desk{
+    display: none;
+}
+.mob{
+    display: block;
+}
+.container{
+    width: 100%;
+}
+.res_width_100{
+    width: 100% !important;
+}
+.res_no_pd{
+    padding: 0;
+}
+
+/* Mobile Menu */
+.mugdhota_web_info_left{
+    width: 60%;
+}
+.sm_manu{
+    width: 40%;
+    float: right;
+}
+.sm_mobile i{
+    text-align: right;
+    width: 100%;
+    font-size: 22px;
+    padding: 17px 0 0 0;
+}
+
+/* Slider */
+.slider_section{
+    width: 100%;
+}
+.slide_img{
+    width: 100% !important;
+}
+.slide_img img{
+    width: 100%;
+    height: 200px !important;
+}
+button.slide_prev, button.slide_next{
+    top: 32%;
+    padding: 5px 10px 5px 5px;
+    border-radius: 5px;
+}
+.slide_content{
+    height: auto;
+    padding: 5px 10px;
+}
+
+/* Content Style 2 */
+.sng_mcs2c{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.sng_mugdhota_cnts{
+    margin-bottom: 40px;
+}
+.sng_mcs2c_img img{
+    width: 100%;
+    height: auto !important;
+}
+.sng_mcs2c_cnt{
+    padding: 0 !important;
+    margin-top: 10px;
+}
+
+.mugdhota_cnt_style_3{
+    margin: 0;
+}
+
+}
