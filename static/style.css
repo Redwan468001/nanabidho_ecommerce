@@ -546,8 +546,9 @@ button.product_slide_next {
 .product_price h3{
     text-decoration: line-through;
     margin: 0;
-    padding: 5px 0 0 5px;
+    padding: 0px 0 0 10px;
     color: #949393;
+    font-size: 25px;
 }
 .add_cart_btn{
     text-align: right;
